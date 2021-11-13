@@ -63,13 +63,14 @@ $$L = g  \times (\frac{T}{2 \times \pi })^2 \quad\Rightarrow\quad  L = g \times 
 
 To calculate the length $L$, we need a key parameter, the acceleration of gravity $g$, for which we use 10 in the calculation above. We can get a more accurate $g$ through analysing the measurement data. (There have a small difference between the end of the line and the center of the object. We can also correct it through analysing the measurement data.)
 $$ L = g \times (\frac{1}{\omega})^2 + d$$
-According to the data we record(Figure 3), we can calculate the real $g$ and difference $d$. Through our calculating, $g$ is about $9.802$ and $d$ is about $0.0738$.
+According to the data we record(Figure 3), we can calculate the real $g$ and difference $d$. Through our calculating, $g$ is about $9.802m/s^2$ and $d$ is about $0.0738m$.
 
+Table 1. Data Analysis Table
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/DataAnalysis.png" width="600" height="300" alt="data analysis"/></div>
-<div align=center>Figure 3. Data Analysis Table</div>
 
+<br/>
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/Figure3.png" width="400" height="300" alt="g fitted graph"/></div>
-<div align=center>Figure 4. g Fitted Graph</div>
+<div align=center>Figure 3. g Fitted Graph</div>
 
 
 
