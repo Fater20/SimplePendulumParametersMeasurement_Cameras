@@ -46,7 +46,7 @@ To touch the question's goal ( $L_{error} \leq 2cm$ ), the period error should l
 $$T = 2 \times \pi \times \sqrt(\frac{L}{g})$$
 $$=2 \times \pi \times \sqrt(\frac{1.5\pm0.02}{10}) \quad\approx\quad 2.458\pm0.016s$$
 
-Actually, it's hard to achieve this frame rate (We need to get a 62.5fps(1/0.016) image, otherwise we may miss the key frame and get inaccurate peak positions). So we must to use an sin function to fit this group of scatters. All of us learn that the change of the horizontal position of a simple pendulum can be regarded as a simple harmonic vibration, that is to say, horizontal position x is a sin function with respect to time t.
+Actually, it's hard to achieve this frame rate (We need to get a $62.5fps$(1/0.016) image, otherwise we may miss the key frame and get inaccurate peak positions). So we must to use an sin function to fit this group of scatters. All of us learn that the change of the horizontal position of a simple pendulum can be regarded as a simple harmonic vibration, that is to say, horizontal position x is a sin function with respect to time t.
 
 $$ x = A \times sin(\omega \times t + \phi ) + x_0 $$
 * $A$ is the amplitude of the horizontal displacement of the simple pendulum, $\omega$ is the angular frequency, $\phi$ is the initial phase, $x_0$ is the difference between the zero point of the image's x coordinate and the midpoint of the harmonic vibration.
@@ -61,7 +61,7 @@ At this point, we can already calculate the period very well. However, let's go 
 
 $$L = g  \times (\frac{T}{2 \times \pi })^2 \quad\Rightarrow\quad  L = g \times (\frac{1}{\omega})^2$$
 
-To calculate the length $L$, we need a key parameter, the acceleration of gravity $g$, for which we use 10 in the calculation above. We can get a more accurate $g$ through analysing the measurement data. (There have a small difference between the end of the line and the center of the object. We can also correct it through analysing the measurement data.)
+To calculate the length $L$, we need a key parameter, the acceleration of gravity $g$, for which we use 10 in the calculation above. We can get a more accurate $g$ through analysing the measurement data. (There have a small difference between the end of the line and the centroid of the object. We can also correct it through analysing the measurement data.)
 $$ L = g \times (\frac{1}{\omega})^2 + d$$
 According to the data we record(Figure 3), we can calculate the real $g$ and difference $d$. Through our calculating, $g$ is about $9.802m/s^2$ and $d$ is about $0.0738m$.
 
@@ -70,9 +70,9 @@ Table 1. Data Analysis Table
 
 <br/>
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/Figure3.png" width="400" height="300" alt="g fitted graph"/></div>
-<div align=center>Figure 3. g Fitted Graph</div>
+<div align=center>Figure 3. 'g' Fitted Graph</div>
 
-
+Using this method and parameters in subsequent measurements, we will find that we can measure the line length of the simple pendulum extremely accurately. The error may less than $2mm$, even at a fairly low frame rate(below $10fps$). It's amazing!
 
 ## Attentions
 
