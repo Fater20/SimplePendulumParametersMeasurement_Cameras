@@ -65,7 +65,7 @@ To calculate the length $L$, we need a key parameter, the acceleration of gravit
 $$ L = g \times (\frac{1}{\omega})^2 + d$$
 According to the data we record(Figure 3), we can calculate the real $g$ and difference $d$. Through our calculating, $g$ is about $9.802$ and $d$ is about $0.0738$.
 
-<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/DataAnalysis.png" width="400" height="300" alt="data analysis"/></div>
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/DataAnalysis.png" width="600" height="300" alt="data analysis"/></div>
 <div align=center>Figure 3. Data Analysis Table</div>
 
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/Figure3.png" width="400" height="300" alt="g fitted graph"/></div>
