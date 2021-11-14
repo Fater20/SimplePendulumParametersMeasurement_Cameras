@@ -77,9 +77,16 @@ Table 1. Data Analysis Table
 Using this method and parameters in subsequent measurements, we will find that we can measure the line length of the simple pendulum extremely accurately. The error may less than $2mm$, even at a fairly low frame rate(below $10fps$). It's amazing!
 
 ### Angle Measurement
-The measurement of angle uses a simple method.
+
+The measurement of angle $\theta$ uses a simple method.
+
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/AngleMeasurementDiagram.png" width="300" height="300" alt="g fitted graph"/></div>
 <div align=center>Figure 4. Angle Measurement Diagram</div> 
+
+In the diagram above, $\theta$ is the angle that we need to measure. $A_1$ and $A_2$ are the horizontal displacement of the simple pendulum in the sight of Camera A and Camera B. It's easy to prove that
+$$\theta = arctan(\frac{A_1}{A_2})$$
+( The horizontal displacement of the simple pendulum is much smaller than the distance ( $1m$ ) between the pendulum and the camera, so we can ignore the difference between two cameras.)
+And we can get $A_1$ and $A_2$ from the fitted sin function in the length measurement. 
 
 
 ## Attentions
