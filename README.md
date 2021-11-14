@@ -36,6 +36,8 @@ Updating ... ...
 
 ## Methods
 
+### Length Measurement
+
 The key of this measurement method is using the sin function to fit scatters.
 Let's do a simple derivation.
 $$T = 2 \times \pi \times \sqrt(\frac{L}{g}) \quad\Rightarrow\quad  L = g  \times (\frac{T}{2 \times \pi })^2$$
@@ -73,6 +75,12 @@ Table 1. Data Analysis Table
 <div align=center>Figure 3. 'g' Fitted Graph</div>
 
 Using this method and parameters in subsequent measurements, we will find that we can measure the line length of the simple pendulum extremely accurately. The error may less than $2mm$, even at a fairly low frame rate(below $10fps$). It's amazing!
+
+### Angle Measurement
+The measurement of angle uses a simple method.
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/AngleMeasurementDiagram.png" width="300" height="300" alt="g fitted graph"/></div>
+<div align=center>Figure 4. Angle Measurement Diagram</div> 
+
 
 ## Attentions
 
