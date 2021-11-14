@@ -345,9 +345,9 @@ def main():
         
         if (not paraA is None) and (not paraB is None):
             TA = 2*pi/paraA[1]
-            LA_fit = (9.78/paraA[1]/paraA[1]-0.077)*100
+            LA_fit = (9.802/paraA[1]/paraA[1]-0.0738)*100
             TB = 2*pi/paraB[1]
-            LB_fit = (9.78/paraB[1]/paraB[1]-0.077)*100
+            LB_fit = (9.802/paraB[1]/paraB[1]-0.0738)*100
             theta = math.atan2(abs(paraA[0]),abs(paraB[0]))/pi*180
             
             if abs(LA_fit-LB_fit)>=4:
@@ -423,6 +423,7 @@ def main():
          # Press 'm' to measure the period
         if key & 0xFF == ord('m'):
             Flag = 2
+            print("Start to measure.")
             # GPIO.output(bep_pin, GPIO.HIGH)
             # time.sleep(0.1)
             # GPIO.output(bep_pin, GPIO.LOW)
