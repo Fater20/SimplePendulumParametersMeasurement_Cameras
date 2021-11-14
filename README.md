@@ -8,7 +8,6 @@ This project come from question D of 2021 NUEDC (2021 National Undergraduate Ele
 Updating ... ...
 
 
-
 ## Requirements
 
 * python3
@@ -28,11 +27,41 @@ Updating ... ...
 
 ## Result Preview
 
+The picture below shows the result of the measurement.
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/ResultPreview.png" width="400" height="300" alt="Result Preview"/></div>
 
 
 ## Introduction
 
+This project aims to accurately measure the parameter of . Line length $L$ and the angle $\theta$ between the projection of pendulum's trajectory on the ground and OA.
 
+./QuestionD.pdf is the contest topic D.
+./parameter_measure.py is the main code. 
+
+There are two ways to get frame in the main code. You need to choose one way, if you run this code.
+* Get frame from url.
+```python
+# Get snapshot from url
+def downloadImg(url):
+    with request.urlopen(url) as f:
+        data = f.read()
+        img1 = np.frombuffer(data, np.uint8)
+        img_cv = cv2.imdecode(img1, cv2.IMREAD_ANYCOLOR)
+        img_rot = np.rot90(img_cv)
+        return img_rot
+```
+
+* Get frame from camera.
+```python
+# Get frame from camera
+def downloadImg(url):
+    ret, img_cv= url.read()
+    if ret:
+        img_rot = np.rot90(img_cv)
+        return img_rot
+    else:
+        return emptyImage
+```
 
 ## Methods
 
@@ -68,10 +97,10 @@ $$ L = g \times (\frac{1}{\omega})^2 + d$$
 According to the data we record(Figure 3), we can calculate the real $g$ and difference $d$. Through our calculating, $g$ is about $9.802m/s^2$ and $d$ is about $0.0738m$.
 
 Table 1. Data Analysis Table
-<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/DataAnalysis.png" width="600" height="300" alt="data analysis"/></div>
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/DataAnalysis.png" width="600" height="300" alt="Data Analysis"/></div>
 
 <br/>
-<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/Figure3.png" width="400" height="300" alt="g fitted graph"/></div>
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/Figure3.png" width="400" height="300" alt="g Fitted Graph"/></div>
 <div align=center>Figure 3. 'g' Fitted Graph</div>
 
 Using this method and parameters in subsequent measurements, we will find that we can measure the line length of the simple pendulum extremely accurately. The error may less than $2mm$, even at a fairly low frame rate(below $10fps$). It's amazing!
@@ -80,7 +109,7 @@ Using this method and parameters in subsequent measurements, we will find that w
 
 The measurement of angle $\theta$ uses a simple method.
 
-<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/AngleMeasurementDiagram.png" width="300" height="300" alt="g fitted graph"/></div>
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/AngleMeasurementDiagram.png" width="300" height="300" alt="Angle Measurement Diagram"/></div>
 <div align=center>Figure 4. Angle Measurement Diagram</div> 
 
 In the diagram above, $\theta$ is the angle that we need to measure. $A_1$ and $A_2$ are the horizontal displacement of the simple pendulum in the sight of Camera A and Camera B. It's easy to prove that
@@ -91,12 +120,17 @@ And we can get $A_1$ and $A_2$ from the fitted sin function in the length measur
 
 ## Attentions
 
+* After runing the code, push key 'M' on the keyboard to start the measure. After about 10 seconds, the system will give the measurement result on the screen.
 
+* The terminal we use is Jetson Nano , so there are some GPIO control functions in the code.
+
+* The project code is not the final version we use in the contest.
 
 ## Conclusion
 
-
+It's enough for us to meet the topic's requirements. This project focuses on the introduction of the calculation, not on the visual algorithm. 
 
 ## Reference
 
-
+* https://zhuanlan.zhihu.com/p/68606317
+* https://blog.csdn.net/kaever/article/details/109659367
