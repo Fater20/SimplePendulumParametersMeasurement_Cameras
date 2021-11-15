@@ -30,6 +30,8 @@ Updating ... ...
 The picture below shows the result of the measurement.
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/ResultPreview.png" width="400" height="300" alt="Result Preview"/></div>
 
+<br/>
+
 <div align=center><video src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/VideoPreview.mp4" controls="controls" width="400" height="300"></video></div>
 
 ## Introduction
