@@ -34,7 +34,7 @@ The picture below shows the result of the measurement.
 
 Video:
 
-![video](https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/VideoPreview.mp4)
+![video](https://www.bilibili.com/video/BV11q4y1378b?from=search&seid=8715954937281155092&spm_id_from=333.337.0.0)
 
 
 
