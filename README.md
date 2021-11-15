@@ -45,6 +45,7 @@ poster="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/b
 This project aims to accurately measure the parameter of . Line length $L$ and the angle $\theta$ between the projection of pendulum's trajectory on the ground and OA.
 
 ./QuestionD.pdf is the contest topic D.
+
 ./parameter_measure.py is the main code. 
 
 There are two ways to get frame in the main code. You need to choose one way, if you run this code.
