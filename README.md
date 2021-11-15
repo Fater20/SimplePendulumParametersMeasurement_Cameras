@@ -31,9 +31,6 @@ The picture below shows the result of the measurement.
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/ResultPreview.png" width="400" height="300" alt="Result Preview"/></div>
 
 
-<iframe src="//player.bilibili.com/player.html?aid=549129965&bvid=BV11q4y1378b&cid=442438530&page=1" width="400" height="300" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-
-
 ## Introduction
 
 This project aims to accurately measure the parameter of . Line length $L$ and the angle $\theta$ between the projection of pendulum's trajectory on the ground and OA.
