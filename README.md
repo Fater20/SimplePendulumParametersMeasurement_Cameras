@@ -32,16 +32,10 @@ The picture below shows the result of the measurement.
 
 <br/>
 
-Video:
-
-![video](https://www.bilibili.com/video/BV11q4y1378b?from=search&seid=8715954937281155092&spm_id_from=333.337.0.0)
-
-
-
 
 ## Introduction
 
-This project aims to accurately measure the parameter of . Line length $L$ and the angle $\theta$ between the projection of pendulum's trajectory on the ground and OA.
+This project aims to accurately measure the parameter of line length $L$ and the angle $\theta$ between the projection of pendulum's trajectory on the ground and OA.
 
 ./QuestionD.pdf is the contest topic D.
 
