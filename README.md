@@ -32,12 +32,11 @@ The picture below shows the result of the measurement.
 
 <br/>
 
-<div align=center><video id="video" width="400" height="300" controls="" preload="none"
-poster="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/ResultPreview.png">
-<source id="mp4" src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/VideoPreview.mp4" 
-    type="video/mp4">
-<p>Your user agent does not support the HTML5 Video element.</p>
-</video></div>
+Video:
+
+![video](https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/VideoPreview.mp4)
+
+
 
 
 ## Introduction
