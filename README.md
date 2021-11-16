@@ -5,8 +5,6 @@ This project come from question D of 2021 NUEDC (2021 National Undergraduate Ele
 <div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/SystemDiagram.png" width="400" height="300" alt="System Diagram"/></div>
 <div align=center>Figure 1. System Diagram</div>
 
-Updating ... ...
-
 
 ## Requirements
 
