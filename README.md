@@ -32,6 +32,8 @@ The picture below shows the result of the measurement.
 
 <br/>
 
+<div align=center><img src="https://github.com/Fater20/SimplePendulumParametersMeasurement_Cameras/blob/main/image/ResultVideo.gif" width="400" height="300" alt="Result Preview"/></div>
+
 
 ## Introduction
 
