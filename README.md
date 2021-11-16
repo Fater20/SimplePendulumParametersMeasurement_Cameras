@@ -123,15 +123,23 @@ And we can get $A_1$ and $A_2$ from the fitted sin function in the length measur
 
 ## Attentions
 
+* This method is for reference only, there will definitely be a more accurate method.
+
+* In order to make better use of the field of view, the cameras are placed vertically in our system.
+
 * After runing the code, push key 'M' on the keyboard to start the measure. After about 10 seconds, the system will give the measurement result on the screen.
 
 * The terminal we use is Jetson Nano , so there are some GPIO control functions in the code.
+
+* If you want to run the code, you need to prepare two cameras and choose the proper way to get frame.
 
 * The project code is not the final version we use in the contest.
 
 ## Conclusion
 
-It's enough for us to meet the topic's requirements. This project focuses on the introduction of the calculation, not on the visual algorithm. 
+It's enough for us to meet the topic's requirements. From my point of view, it is meaningless for us to use error as an indicator to judge the quality of the system, because manual measurement will have an error of about $ \pm 2mm $. We should use standard deviation and try to make it close to zero. Only when there is a small standard deviation in each length measurement, we can be sure that this is a correct and reliable method.
+
+This project focuses on the introduction of the calculation, not on the visual algorithm. 
 
 ## Reference
 
